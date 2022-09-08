@@ -51,6 +51,28 @@
     margin-left: 40px;
 }
 
+.section-3 {
+    padding: 50px 0;
+}
+
+.platforms {
+    display: grid;
+    grid: repeat(2, 1fr) / repeat(3, 1fr);
+}
+
+.plat-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plat-img {
+    width: 332px;
+    height: 143px;
+    object-position: 50% 50%;
+    object-fit: cover;
+}
+
 @media screen and (max-width: 470px) {
     .main {
         padding: 6vw;
