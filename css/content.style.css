@@ -1,6 +1,7 @@
 .main {
     padding: calc(2vw);
-    background: var(--black);
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .section-1 {
