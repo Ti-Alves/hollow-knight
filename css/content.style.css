@@ -74,7 +74,6 @@
 
 .dlc {
     width: 25%;
-    /* max-height: 435px; */
 }
 
 .dlc-title {
@@ -102,6 +101,20 @@
 @media screen and (max-width: 768px) {
     .platforms {
         grid: repeat(3, 1fr) / repeat(2, 1fr);
+    }
+    .row:has(.dlc) {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dlc {
+        width: 100%;
+        margin: 17px 0;
+    }
+    .dlc-img {
+        width: 280px;
+    }
+    .dlc-text {
+        width: 280px;
     }
 }
 
