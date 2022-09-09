@@ -51,6 +51,17 @@ p.text {
   font-size: 14px;
 }
 
+.anch {
+  display: flex
+  ;
+  background: var(--white);
+  padding: 17px;
+}
+
+.anch .text {
+  color: var(--black);
+}
+
 @media screen and (max-width: 768px) {
   h2.text {
     font-size: 30px;
