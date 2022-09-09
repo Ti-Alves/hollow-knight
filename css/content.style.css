@@ -1,5 +1,5 @@
 .main {
-    padding: calc(4vw + 24px);
+    padding: calc(2vw);
     background: var(--black);
 }
 
@@ -19,7 +19,7 @@
 .row {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     margin: 42px 0;
 }
@@ -30,7 +30,7 @@
 
 .row-img {
     width: 45%;
-    margin: 24px;
+    margin: 24px 0;
 }
 
 .row-text {
@@ -38,7 +38,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .row.rev .row-text {
@@ -72,9 +72,52 @@
     object-fit: cover;
 }
 
+.dlc {
+    width: 25%;
+}
+
+.dlc-title {
+    padding: 17px 0;
+}
+
+.dlc-fig {
+    width: 100%;
+    padding: 17px;
+    text-align: center;
+}
+
+.dlc-img {
+    max-width: 282px;
+    width: 20vw;
+}
+
+.dlc-text {
+    max-width: 282px;
+    width: 20vw;    
+    margin: 0 auto;
+    font-size: 10%;
+}
+
 @media screen and (max-width: 768px) {
     .platforms {
         grid: repeat(3, 1fr) / repeat(2, 1fr);
+    }
+    .row:has(.dlc) {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dlc {
+        width: 100%;
+        margin: 17px 0;
+    }
+    .dlc-img {
+        width: 280px;
+    }
+    .dlc-text {
+        width: 280px;
+    }
+    .dlc-fig {
+        padding: 0;
     }
 }
 
@@ -93,5 +136,11 @@
     }
     .row-img {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main {
+        padding: 3vw;
     }
 }
