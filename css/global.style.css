@@ -51,6 +51,22 @@ p.text {
   font-size: 14px;
 }
 
+.anch {
+  display: flex;
+  background: var(--white);
+  padding: 17px;
+  width: fit-content;
+  transition: all .25s ease-in-out;
+}
+
+.anch:hover {
+  opacity: .5;
+}
+
+.anch .text {
+  color: var(--black);
+}
+
 @media screen and (max-width: 768px) {
   h2.text {
     font-size: 30px;
@@ -68,3 +84,6 @@ p.text {
   }
 }
 
+.wrapper {
+  background: var(--black);
+}

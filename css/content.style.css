@@ -1,6 +1,7 @@
 .main {
     padding: calc(2vw);
-    background: var(--black);
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .section-1 {
@@ -111,7 +112,7 @@
         margin: 17px 0;
     }
     .dlc-img {
-        width: 280px;
+        width: fit-content;
     }
     .dlc-text {
         width: 280px;
@@ -142,5 +143,9 @@
 @media screen and (max-width: 320px) {
     .main {
         padding: 3vw;
+    }
+    .dlc-img,
+    .dlc-text {
+        width: 100%;
     }
 }
